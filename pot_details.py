@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import filedialog
 from PIL import Image, ImageTk
 import customtkinter as ctk
 from db_manager.plants import *
@@ -7,15 +6,18 @@ import os
 from db_manager.plants import *
 
 
+
+
 class PlantDetails(ctk.CTkFrame):
-    def __init__(self, master, plant_id, *args, **kwargs):
+    def __init__(self, master, pot_id, *args, **kwargs):
         super().__init__(master, *args, **kwargs)
 
-        self.plant_id = plant_id
+        self.master = master
+        self.pot_id = pot_id
         self.edit_mode = False
 
         
-        self.plant_details_screen()
+        self.pot_details_screen()
 
     def plant_details_screen(self):
 
@@ -24,7 +26,7 @@ class PlantDetails(ctk.CTkFrame):
 
         self.mid_frame.grid_columnconfigure((0,1), weight=1)
 
-        self.plant = get_plant_by_id(self.plant_id)
+        self.plant = get_pot_by_id(self.plant_id)
 
 
         img = Image.open(self.plant[2])

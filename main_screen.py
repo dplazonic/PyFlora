@@ -5,7 +5,12 @@ import customtkinter as ctk
 from time import strftime
 from user_editor import *
 from db_manager.plants import *
-from plant_tiles_class import PlantTiles
+from plant_tiles import PlantTiles
+from add_plant import AddPlant
+from plant_details import PlantDetails
+from pots_screen import PotsTiles
+from add_plant_to_pot import AddPlantToPot
+from add_pot import AddPot
 
 
 ctk.set_appearance_mode("light")  # Modes: "System" (standard), "Dark", "Light"
@@ -25,7 +30,7 @@ class App(ctk.CTk):
         # configure grid layout (3x4)
         self.grid_columnconfigure((1, 2), weight=1)
         self.grid_columnconfigure((0,3), weight=0)
-        self.grid_rowconfigure(1, weight=1)
+        self.grid_rowconfigure(1, weight=2)
         self.grid_rowconfigure((0,2), weight=0)
 
 
@@ -36,15 +41,15 @@ class App(ctk.CTk):
         self.top_frame.grid_columnconfigure(2, weight=1)
         self.logo_label = ctk.CTkLabel(self.top_frame, text="PyFlora", font=ctk.CTkFont(size=30, weight="bold"))
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        self.topbar_button_1 = ctk.CTkButton(self.top_frame,text= "PyFlora Posude", command=self.sidebar_button_event)
+        self.topbar_button_1 = ctk.CTkButton(self.top_frame,text= "PyFlora Posude", command=self.pots_button_event)
         self.topbar_button_1.grid(row=1, column=0, padx=20, pady=10)
-        self.topbar_button_2 = ctk.CTkButton(self.top_frame,text= "Biljke", command=self.sidebar_button_event)
+        self.topbar_button_2 = ctk.CTkButton(self.top_frame,text= "Biljke", command=self.plant_button_event)
         self.topbar_button_2.grid(row=1, column=1, padx=20, pady=10)
         self.topbar_button_3 = ctk.CTkButton(self.top_frame, text= "Moj Profil", command=create_edit_user_screen)
         self.topbar_button_3.grid(row=1, column=3, padx=20, pady=10)
         self.topbar_button_4 = ctk.CTkButton(self.top_frame, text= "Logout", command=self.sidebar_button_event)
         self.topbar_button_4.grid(row=0, column=3, padx=20, pady=10)
-        self.sync_button = ctk.CTkButton(self.top_frame, text= "SYNC", command=self.sidebar_button_event)
+        self.sync_button = ctk.CTkButton(self.top_frame, text= "SYNC", command=self.sync_button_event)
         self.sync_button.grid(row = 1, column = 2, sticky="ne", padx=20, pady=10)
         
 
@@ -52,10 +57,7 @@ class App(ctk.CTk):
         ### ---- middle frame ----- ###
 
         self.mid_frame = None
-
-        # self.mid_frame = PlantTiles(master=self)
-        # self.mid_frame.grid(row=1, column=0, columnspan=4)
-
+     
 
 
 
@@ -89,30 +91,87 @@ class App(ctk.CTk):
         dialog = ctk.CTkInputDialog(text="Type in a number:", title="CTkInputDialog")
         print("CTkInputDialog:", dialog.get_input())
 
-    def change_appearance_mode_event(self, new_appearance_mode: str):
-        ctk.set_appearance_mode(new_appearance_mode)
 
-    def change_scaling_event(self, new_scaling: str):
-        new_scaling_float = int(new_scaling.replace("%", "")) / 100
-        ctk.set_widget_scaling(new_scaling_float)
+
+
+
 
     def sidebar_button_event(self):
+        print("Tile 1 clicked")
+
+
+    def plant_button_event(self):
         if self.mid_frame is not None:
             self.mid_frame.grid_forget()
 
         self.mid_frame = PlantTiles(master=self)
-        self.mid_frame.grid(row=1, column=0, columnspan=4)
+        self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=20, pady=20)
 
 
-    def tile1_click_event(self):
-        print("Tile 1 clicked")
+
+    def pots_button_event(self):
+        if self.mid_frame is not None:
+            self.mid_frame.grid_forget()
+
+        self.mid_frame = PotsTiles(master=self)
+        self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=20, pady=20)
+
+        
 
     def tile2_click_event(self):
         print("Tile 2 clicked")
 
     def tile3_click_event(self):
         print("Tile 3 clicked")
+           
     
+    
+     ##----------PLANT TILES ---------##
+
+    def update_plant_tiles(self):
+        self.mid_frame.grid_forget()
+        self.mid_frame = PlantTiles(self)
+        self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=20, pady=20)
+
+    def show_add_plant(self):
+        self.mid_frame.grid_forget()
+        self.mid_frame = AddPlant(self)
+        self.mid_frame.grid(row=1, column=1, padx=20, pady=20, columnspan=2)
+        self.mid_frame.grid_columnconfigure((1,2), weight=1)
+
+    def show_plant_details(self, plant_id):
+        self.mid_frame.grid_forget()
+        self.mid_frame = PlantDetails(self, plant_id=plant_id)
+        self.mid_frame.grid(row=1, column=1, padx=20, pady=20, columnspan=2)
+        self.mid_frame.grid_columnconfigure((1,2), weight=1)
+
+        ##----------POT TILES ---------##
+
+    def update_pot_tiles(self):
+         self.mid_frame.grid_forget()
+         self.mid_frame = PotsTiles(self)
+         self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=20, pady=20)
+
+    def show_add_pot(self):
+        self.mid_frame.grid_forget()
+        self.mid_frame = AddPot(self)
+        self.mid_frame.grid(row=1, column=1, padx=20, pady=20, columnspan=2)
+        self.mid_frame.grid_columnconfigure((1,2), weight=1)
+
+    # def show_pot_details(self, plant_id):
+    #     self.mid_frame.grid_forget()
+    #     self.mid_frame = PlantDetails(self, plant_id=plant_id)
+    #     self.mid_frame.grid(row=1, column=1, padx=20, pady=20, columnspan=2)
+    #     self.mid_frame.grid_columnconfigure((1,2), weight=1)
+
+    def add_plant_to_pot(self, pot_id):
+        self.mid_frame.grid_forget()
+        self.mid_frame = AddPlantToPot(master=self, pot_id=pot_id)
+        self.mid_frame.grid(row=1, column=1, padx=20, pady=20, columnspan=2)
+        self.mid_frame.grid_columnconfigure((1,2), weight=1)
+
+    def sync_button_event(self):
+        pass
 
 if __name__ == "__main__":
     app = App()

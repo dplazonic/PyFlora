@@ -64,18 +64,18 @@ def get_plant_id(plant_name):
         finally:
             conn.close()
 
-def update_plant(plant_id, plant_name, photo, watering, brightness, temperature, supstrate):
+def update_plant(plant_id, watering, brightness, temperature, supstrate):
     conn = create_connection()
     if conn is not None:
         cursor = conn.cursor()
         try:
             cursor.execute("""
             UPDATE plants
-            SET plant_name = ?, photo = ?, watering = ?, brightness = ?, temperature = ?, supstrate = ?
+            SET watering = ?, brightness = ?, temperature = ?, supstrate = ?
             WHERE id = ?
-            """, (plant_name, photo, watering, brightness, temperature, supstrate, plant_id))
+            """, (watering, brightness, temperature, supstrate, plant_id))
             conn.commit()
-            print("User updated successfully.")
+            print("Plants updated successfully.")
         except sqlite3.Error as e:
             print(e)
         finally:
@@ -100,9 +100,9 @@ def get_plants():
             conn.close()
     return display_rows
 
+
 def get_plant_by_id(plant_id):
     conn = create_connection()
-    #plant = None
     if conn is not None:
         cursor = conn.cursor()
         try:
@@ -113,11 +113,6 @@ def get_plant_by_id(plant_id):
             print(e)
         finally:
             conn.close()
-  
-    
-
-
-
 
 
 def delete_plant(plant_id):
@@ -134,16 +129,16 @@ def delete_plant(plant_id):
 
 init_plants_table()
 def add_test_data():
-    add_plant("Orhideja", "photos\\orhideja.jpg", "tjedno", "tamnije", "toplije", False)
-    add_plant("Ruža", "photos\\ruza.jpg", "tjedno", "tamnije", "toplije", False)
-    add_plant("Blitva", "photos\\blitva.jpg", "tjedno", "tamnije", "toplije", True)
-    add_plant("Rajčica", "photos\\rajcica.jpg", "tjedno", "tamnije", "toplije", True)
-    add_plant("Tulipan", "photos\\tulipan.jpg", "tjedno", "tamnije", "toplije", False)
-    add_plant("Kaktus", "photos\\kaktus.jpg", "mjesečno", "tamnije", "toplije", True)
-    add_plant("Zamija", "photos\\zamija.jpg", "tjedno", "tamnije", "hladnije", False)
-    add_plant("Bosiljak", "photos\\bosiljak.jpg", "tjedno", "svjetlije", "toplije", True)
-    add_plant("Fikus", "photos\\fikus.jpg", "tjedno", "tamnije", "toplije", True)
-    add_plant("Paprat", "photos\\paprat.jpg", "tjedno", "tamnije", "toplije", False)
+    add_plant("Orhideja", "photos\\orhideja.jpg", "tjedno", "tamno", "hladnije", False)
+    add_plant("Ruža", "photos\\ruza.jpg", "tjedno", "svijetlo", "hladnije", False)
+    add_plant("Blitva", "photos\\blitva.jpg", "tjedno", "tamno", "toplije", True)
+    add_plant("Rajčica", "photos\\rajcica.jpg", "tjedno", "svijetlo", "toplije", True)
+    add_plant("Tulipan", "photos\\tulipan.jpg", "dnevno", "svijetlo", "toplije", False)
+    add_plant("Kaktus", "photos\\kaktus.jpg", "mjesečno", "tamno", "hladnije", True)
+    add_plant("Zamija", "photos\\zamija.jpg", "tjedno", "tamno", "hladnije", False)
+    add_plant("Bosiljak", "photos\\bosiljak.jpg", "tjedno", "svijetlo", "toplije", True)
+    add_plant("Fikus", "photos\\fikus.jpg", "tjedno", "tamno", "hladnije", True)
+    add_plant("Paprat", "photos\\paprat.jpg", "tjedno", "svijetlo", "toplije", False)
 
 # sve= get_plant()
 
@@ -153,5 +148,6 @@ def add_test_data():
 
 # print(plants)
 
-
-#add_test_data()
+# plant=get_plants()
+# print(plant)
+add_test_data()

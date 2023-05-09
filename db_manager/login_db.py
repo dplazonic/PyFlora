@@ -1,7 +1,5 @@
 import sqlite3
 
-
-
 def create_connection():
     try:
         conn = sqlite3.connect("pyflora.db")
@@ -82,19 +80,23 @@ def update_user(user_id, first_name, last_name, username, password):
 
 
 def check_password(username, password):
-    conn = create_connection()
     try:
+        conn = sqlite3.connect('pyflora.db')
         cursor = conn.cursor()
+
         cursor.execute("SELECT password FROM users WHERE username=?", (username,))
         db_password = cursor.fetchone()
         
+
         if db_password is None:
             return False
         
         stored_password = db_password[0]
 
     except sqlite3.Error as e:
-        print(e)
+        print(f"An error occurred while checking password: {e}")
+        return False
+
     finally:
         conn.close()
 
@@ -102,32 +104,32 @@ def check_password(username, password):
 
 
 def check_user(username, password):
-    conn = create_connection()
     try:
+        conn = sqlite3.connect('pyflora.db')
         cursor = conn.cursor()
 
         cursor.execute("SELECT username FROM users WHERE password=?", (password,))
-        db_username = cursor.fetchone()
+        db_user = cursor.fetchone()
         
-        if db_username is None:
+        if db_user is None:
             return False
         
-        stored_username = db_username[0]
+        stored_user = db_user[0]
+
     except sqlite3.Error as e:
-        print(e)
+        print(f"An error occurred while checking password: {e}")
+        return False
+
     finally:
         conn.close()
-    return stored_username == username
+    return stored_user == username
 
 init_users_table()
 
-# add_user("davor", "plazonic", "admin", "admin")
-# add_user("pero", "perić", "admin1", "admin1")
+add_user("davor", "plazonic", "admin", "admin")
 
-# get_user_id("admin")
-
+# get_user_id("sss")
 
 
 
-print(check_password("admin", "admin"))
-print(check_user("admin", "admin"))
+add_user("pero", "perić", "admin", "admin")
