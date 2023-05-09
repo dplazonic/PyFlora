@@ -201,7 +201,7 @@ class PotsTiles(ctk.CTkScrollableFrame):
 
                 light_check = "OK" if light_status == brightness else f"zahtjeva uvjete: {brightness}!"
                 temp_check = "OK" if temperature_status == temperature else f"zahtjeva {temperature} uvjete!"
-                moist_check = "OK" if moisture_status == watering else f"zahtjeva zalijevanje: {watering}!"
+                moist_check = "OK" if moisture_status == watering else f"zahtjeva {watering} zalijevanje!"
 
             else:
                 
