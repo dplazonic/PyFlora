@@ -1,7 +1,6 @@
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import messagebox
-from klase.User import User
 from db_manager.login_db import *
 
 ctk.set_appearance_mode("light")  # Modes: "System" (standard), "Dark", "Light"
