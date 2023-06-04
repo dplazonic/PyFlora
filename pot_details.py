@@ -112,6 +112,12 @@ class PotDetails(ctk.CTkScrollableFrame):
         self.refresh_button.grid(row=0, column=2, sticky="we")
 
 
-    def empty_the_pot(self, pot_id):
-        remove_plant_from_pot(pot_id)
-        self.master.update_pot_tiles()
+def empty_the_pot(self, pot_id: int) -> None:
+    """
+    Removes a plant from a pot and updates the pot tiles in the master window.
+
+    Args:
+        pot_id (int): The ID of the pot from which to remove the plant.
+    """
+    remove_plant_from_pot(pot_id)
+    self.master.update_pot_tiles()
