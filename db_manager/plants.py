@@ -127,8 +127,35 @@ def delete_plant(plant_id):
         finally:
             conn.close()
 
-init_plants_table()
-def add_test_data():
+
+def is_plants_table_empty() -> bool:
+    """
+    Checks if the 'plants' table in the database is empty.
+
+    Returns:
+        bool: True if the table is empty, False otherwise.
+    """
+    conn = create_connection()
+    if conn is not None:
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT COUNT(*) FROM plants")
+            count = cursor.fetchone()[0]
+            return count == 0
+        except sqlite3.Error as e:
+            print(e)
+        finally:
+            conn.close()
+
+def add_data_if_needed() -> None:
+    """
+    Adds test data to the 'plants' table if it is empty.
+    """
+    if is_plants_table_empty():
+        add_plant_data()
+
+
+def add_plant_data():
     add_plant("Orhideja", "photos\\orhideja.jpg", "tjedno", "tamno", "hladnije", False)
     add_plant("Ruža", "photos\\ruza.jpg", "tjedno", "svijetlo", "hladnije", False)
     add_plant("Blitva", "photos\\blitva.jpg", "tjedno", "tamno", "toplije", True)
@@ -140,14 +167,5 @@ def add_test_data():
     add_plant("Fikus", "photos\\fikus.jpg", "tjedno", "tamno", "hladnije", True)
     add_plant("Paprat", "photos\\paprat.jpg", "tjedno", "svijetlo", "toplije", False)
 
-# sve= get_plant()
-
-# print(sve)
-# delete_plant(1)
-# plants = get_plants()
-
-# print(plants)
-
-# plant=get_plants()
-# print(plant)
-add_test_data()
+init_plants_table()
+add_data_if_needed()

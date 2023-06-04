@@ -1,103 +1,117 @@
 import tkinter as tk
-from PIL import Image, ImageTk
 import customtkinter as ctk
+from PIL import Image
 from db_manager.plants import *
-import os
-from db_manager.plants import *
+from db_manager.pots_db import *
+from pots_screen import *
+from sensors import *
 
+class PotDetails(ctk.CTkScrollableFrame):
+    """A tkinter based application interface to view and manage the details of pots and plants.
 
-
-
-class PlantDetails(ctk.CTkFrame):
-    def __init__(self, master, pot_id, *args, **kwargs):
+    Args:
+        master (optional, ctk.CTk): The parent window. Defaults to None.
+        pot_id (optional, str): The unique identifier of a pot. Defaults to None.
+"""    
+    def __init__(self, master: ctk.CTk = None, pot_id: int = None, *args, **kwargs):
         super().__init__(master, *args, **kwargs)
 
         self.master = master
         self.pot_id = pot_id
         self.edit_mode = False
+        self.pots_tiles = PotsTiles(self.master) 
 
+
+        if self.pot_id is not None:
+            self.pots_details_screen()
+
+    def pots_details_screen(self):
+        """
+        Display the pot details screen.
+        """
+
+        self.grid(padx=20, pady=20, sticky="nswe")
+
+        for i in range(3):
+            self.grid_columnconfigure(i, weight=1)
+            self.grid_rowconfigure(i, weight=1)
+
+        self.pot = get_pot_by_display_id(self.pot_id)   
+        self.plant = get_plant_by_id(self.pot[5])
         
-        self.pot_details_screen()
+        self.desc_label_0 = ctk.CTkLabel(self, text=f"Posuda br. {self.pot[0]}", font=ctk.CTkFont(size=24, weight="bold"))
+        self.desc_label_0.grid(row=0, column=0, pady=20, padx=10, columnspan=4, sticky="we")
 
-    def plant_details_screen(self):
+        ### ---- PHOTO ---- ###
 
-        self.mid_frame = ctk.CTkFrame(self,  bg_color="transparent")
-        self.mid_frame.grid(row=1, column=0, padx=50, pady=50)
+        img = Image.open("photos\\pot.png" if self.pot[7]== None else self.pot[7])
+        img_tk = ctk.CTkImage(img, size=(300, 300))
+        self.img_label = ctk.CTkLabel(self, text="", image=img_tk)
+        self.img_label.grid(row=1, column=3, padx=10, pady=10, sticky="we")
+        
+        ### ---- POT PROP ---- ###
 
-        self.mid_frame.grid_columnconfigure((0,1), weight=1)
+        self.pot_properties= ctk.CTkFrame(self)
+        self.pot_properties.grid(row=1, column=1, sticky= "we", padx=5, pady=5)
+        self.desc_label_1 = ctk.CTkLabel(self.pot_properties, text=f"Materijal posude: {self.pot[2]}", font=ctk.CTkFont(size=14))
+        self.desc_label_1.grid(row=1, column=0, padx=5, pady=5, sticky="we")
+        self.desc_label_2 = ctk.CTkLabel(self.pot_properties, text=f"Pozicija posude: {self.pot[3]}", font=ctk.CTkFont(size=14))
+        self.desc_label_2.grid(row=2, column=0, padx=5, pady=5, sticky="we")
+        self.desc_label_3 = ctk.CTkLabel(self.pot_properties, text=f"Veličina posude: {self.pot[4]}", font=ctk.CTkFont(size=14))
+        self.desc_label_3.grid(row=3, column=0, padx=5, pady=5, sticky="we")
 
-        self.plant = get_pot_by_id(self.plant_id)
+        ### ---- PLANT PROP ---- ###
 
+        self.plant_properties= ctk.CTkFrame(self)
+        self.plant_properties.grid(row=1, column=0, padx=5, pady=5, sticky="we")
 
-        img = Image.open(self.plant[2])
-        img_tk = ctk.CTkImage(img, size=(400, 400))
-        self.img_label = ctk.CTkLabel(self.mid_frame, text="", image=img_tk)
-        self.img_label.grid(row=1, column=0, padx=10, pady=10, columnspan=2)
+        self.plant_name = ctk.CTkLabel(self.plant_properties, text=self.plant[1], font=ctk.CTkFont(size=40, weight="bold"))
+        self.plant_name.grid(row=1, column=0, pady=20, padx=10, sticky="we")
+        self.watering = ctk.CTkLabel(self.plant_properties, text=f"Zalijevanje: {self.plant[3]}", font=ctk.CTkFont(size=14))
+        self.watering.grid(row=2, column=0, padx=10, pady=5, sticky="we")
+        self.brightness = ctk.CTkLabel(self.plant_properties, text=f"Izloženost svjetlosti: {self.plant[4]}", font=ctk.CTkFont(size=14))
+        self.brightness.grid(row=3, column=0, padx=10, pady=5, sticky="we")
+        self.temperature = ctk.CTkLabel(self.plant_properties, text=f"Temperatura: {self.plant[5]}", font=ctk.CTkFont(size=14))
+        self.temperature.grid(row=4, column=0, padx=10, pady=5, sticky="we")
+        self.supstrate = ctk.CTkLabel(self.plant_properties, text=f"Dodavanje supstrata: {'da' if self.plant[6] == 1 else 'ne'}", font=ctk.CTkFont(size=14))
+        self.supstrate.grid(row=5, column=0, padx=10, sticky="we")
 
-        self.plant_name = ctk.CTkLabel(self.mid_frame, text=self.plant[1], font=ctk.CTkFont(size=30, weight="bold"))
-        self.plant_name.grid(row=0, column=0, pady=20, padx=10, columnspan=2)
+        ### ---- SENSOR STATUS ---- ###
 
-        self.watering = ctk.CTkLabel(self.mid_frame, text=f"Zalijevanje: {self.plant[3]}", font=ctk.CTkFont(size=14))
-        self.watering.grid(row=2, column=0, padx=10, pady=5, sticky="we", columnspan=2)
+        self.sensor_data = self.pots_tiles.generate_sensor_data(self.pot)
+        self.plant_status_texts = self.pots_tiles.check_plant_status()
+        self.status_text = self.plant_status_texts[self.pot[0] - 1]
 
-        self.brightness = ctk.CTkLabel(self.mid_frame, text=f"Izloženost svjetlosti: {self.plant[4]}", font=ctk.CTkFont(size=14))
-        self.brightness.grid(row=3, column=0, padx=10, pady=5, sticky="we", columnspan=2)
+        self.sensors_status= ctk.CTkFrame(self)
+        self.sensors_status.grid(row=1, column=2, padx=5, pady=5, sticky="ew")
+        self.temperature_label = ctk.CTkLabel(self.sensors_status, text=f"Temperatura: {self.sensor_data['temperature']} °C", font=ctk.CTkFont(size=14))
+        self.temperature_label.grid(row=1, column=0, padx=5, sticky="w")        
+        self.moisture_label = ctk.CTkLabel(self.sensors_status, text=f"Vlažnost: {self.sensor_data['moisture']} %", font=ctk.CTkFont(size=14))
+        self.moisture_label.grid(row=2, column=0, padx=5, sticky="w")        
+        self.light_label = ctk.CTkLabel(self.sensors_status, text=f"Svjetlost: {self.sensor_data['brightness']} lux", font=ctk.CTkFont(size=14))
+        self.light_label.grid(row=3, column=0, padx=5, sticky="w")
 
-        self.temperature = ctk.CTkLabel(self.mid_frame, text=f"Temperatura: {self.plant[5]}", font=ctk.CTkFont(size=14))
-        self.temperature.grid(row=4, column=0, padx=10, pady=5, sticky="we", columnspan=2)
-
-        self.supstrate = ctk.CTkLabel(self.mid_frame, text=f"Dodavanje supstrata: {'da' if self.plant[6] == 1 else 'ne'}", font=ctk.CTkFont(size=14))
-        self.supstrate.grid(row=5, column=0, padx=10, sticky="we", columnspan=2)
-
-        self.editbtn = ctk.CTkButton(self.mid_frame, text="Ažuriraj podatke o biljci", command=self.toggle_edit_mode)
-        self.editbtn.grid(row=6, column=0, pady=20, padx=10, sticky="we", columnspan=2)
-
-    def toggle_edit_mode(self):
-        if self.edit_mode:
-            self.save_changes()
-            self.edit_mode = False
-            self.editbtn.configure(text="Ažuriraj podatke o biljci")
-            self.plant_details_screen()
-        else:
-            self.edit_mode = True
-            self.editbtn.configure(text="Spremi")
-            self.details_editing()
-
-    def details_editing(self):
-        self.watering.destroy()
-        self.brightness.destroy()
-        self.temperature.destroy()
-        self.supstrate.destroy()
-
-        self.mid_frame.grid_columnconfigure(0, weight=0)
-        self.mid_frame.grid_columnconfigure(1, weight=1) 
-
-
-        self.watering = ctk.CTkLabel(self.mid_frame, text=f"Zalijevanje:", font=ctk.CTkFont(size=12))
-        self.watering.grid(row=2, column=0, padx=10, pady=5, sticky="w")
-        self.entry_watering = ctk.CTkEntry(self.mid_frame, width=30, textvariable=tk.StringVar(value=self.plant[3]))
-        self.entry_watering.grid(row=2, column=1, padx=10, pady=5, sticky="we", columnspan=2)
-
-        self.brightness = ctk.CTkLabel(self.mid_frame, text=f"Izloženost svjetlosti:", font=ctk.CTkFont(size=12))
-        self.brightness.grid(row=3, column=0, padx=10, pady=5, sticky="w")
-        self.entry_brightness = ctk.CTkEntry(self.mid_frame, width=30, textvariable=tk.StringVar(value=self.plant[4]))
-        self.entry_brightness.grid(row=3, column=1, padx=10, pady=5, sticky="we", columnspan=2)
-
-        self.temperature = ctk.CTkLabel(self.mid_frame, text=f"Temperatura:", font=ctk.CTkFont(size=12))
-        self.temperature.grid(row=4, column=0, padx=10, pady=5, sticky="w")
-        self.entry_temperature = ctk.CTkEntry(self.mid_frame, width=30, textvariable=tk.StringVar(value=self.plant[5]))
-        self.entry_temperature.grid(row=4, column=1, padx=10, pady=5, sticky="we", columnspan=2)
-
-        self.supstrate = ctk.CTkLabel(self.mid_frame, text=f"Dodavanje supstrata:", font=ctk.CTkFont(size=12))
-        self.supstrate.grid(row=5, column=0, padx=10, sticky="w")
-        self.entry_substrate = ctk.CTkEntry(self.mid_frame, width=30, textvariable=tk.StringVar(value=f"{'da' if self.plant[6] == 1 else 'ne'}"))
-        self.entry_substrate.grid(row=5, column=1, padx=10, sticky="we", columnspan=2)
+         ### ---- GRAPHS ---- ###
+        
+        self.sensors_graphs = ctk.CTkFrame(self)
+        self.sensors_graphs.grid(row=3,column=0, sticky="we", padx=5, pady=5, columnspan=4)
+        self.sensors_graphs_label = ctk.CTkLabel(self.sensors_graphs, text="Grafički prikaz stanja senzora zadnja 24h", corner_radius=6)
+        self.sensors_graphs_label.grid(row=0, sticky="we", columnspan=4)
+        self.sensor_plotter = SensorPlotter(self.sensors_graphs, self.pot_id)
+        self.sensor_plotter.plot_sensor_data()
 
 
-    def save_changes(self):
-        updated_watering = self.entry_watering.get()
-        updated_light = self.entry_brightness.get()
-        updated_temperature = self.entry_temperature.get()
-        updated_substrate = True if self.entry_substrate.get() == "da" else False
+        ### ---- REFRESH ---- ###
 
-        update_plant(self.plant_id, updated_watering, updated_light, updated_temperature, updated_substrate)
+        self.refresh_button = ctk.CTkButton(self.sensors_graphs, text="Refresh", corner_radius=10, command=self.sensor_plotter.plot_sensor_data)
+        self.refresh_button.grid(row=0, column=0, sticky="we")
+
+        ### ---- DELETE PLANT FROM POT ---- ###
+
+        self.refresh_button = ctk.CTkButton(self.sensors_graphs, text="Izbaci bljku iz posude", corner_radius=10, command=lambda pot_id=self.pot[0]: self.empty_the_pot(pot_id))
+        self.refresh_button.grid(row=0, column=2, sticky="we")
+
+
+    def empty_the_pot(self, pot_id):
+        remove_plant_from_pot(pot_id)
+        self.master.update_pot_tiles()

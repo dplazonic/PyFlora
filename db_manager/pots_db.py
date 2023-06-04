@@ -15,7 +15,7 @@ def init_pots_table():
         try:
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS pots (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    id INTEGER PRIMARY KEY,
                     material TEXT,
                     placement TEXT,
                     size INTEGER,
@@ -52,14 +52,15 @@ def get_pots():
         cursor = conn.cursor()
         try:
             cursor.execute("""
-                SELECT pots.id, pots.material, pots.placement, pots.size, plants.id, plants.plant_name
+                SELECT pots.id, pots.material, pots.placement, pots.size, plants.id, plants.plant_name, plants.photo
                 FROM pots
                 LEFT JOIN plants ON pots.plant_id = plants.id;
             """)
             rows = cursor.fetchall()
-            for display_id, row in enumerate(rows, start=1):
-                display_row = (display_id,) + row
-                display_rows.append(display_row)
+            if rows is not None:  # Check if rows is not None before trying to enumerate
+                for display_id, row in enumerate(rows, start=1):
+                    display_row = (display_id,) + row
+                    display_rows.append(display_row)
         except sqlite3.Error as e:
             print(e)
         finally:
@@ -80,6 +81,17 @@ def get_pot_by_id(pot_id):
             print(e)
         finally:
             conn.close()
+
+
+def get_pot_by_display_id(display_id):
+    pots = get_pots()
+    for pot in pots:
+        if pot[0] == display_id:
+            return pot
+
+    return None
+
+            
 
 def update_pot_with_plant(pot_id, plant_id):
     conn = create_connection()
@@ -112,19 +124,55 @@ def delete_pot(pot_id):
             conn.close()
 
 
+def remove_plant_from_pot(pot_id):
+    conn = create_connection()
+    if conn is not None:
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+            UPDATE pots 
+            SET plant_id=NULL 
+            WHERE id=?
+            """, (pot_id,))
+            conn.commit()
+            print("plant removed from pot")
+        except sqlite3.Error as e:
+            print(e)
+        finally:
+            conn.close()
 
 
+def is_pots_table_empty() -> bool:
+    """
+    Checks if the 'pots' table in the database is empty.
+
+    Returns:
+        bool: True if the table is empty, False otherwise.
+    """
+    conn = create_connection()
+    if conn is not None:
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT COUNT(*) FROM pots")
+            count = cursor.fetchone()[0]
+            return count == 0
+        except sqlite3.Error as e:
+            print(e)
+        finally:
+            conn.close()
+
+def add_data_if_needed() -> None:
+    """
+    Adds test data to the 'plants' table if it is empty.
+    """
+    if is_pots_table_empty():
+        generate_pots()
 
 
-init_pots_table()
 
 def generate_pots():
     add_pot("glina", "kuhinja", "srednja", None)
-    add_pot("plastika", "hodnik", "srednja", None)
-    add_pot("keramika", "dnevni boravak", "srednja", None)
-    add_pot("glina", "terasa", "velika", None)
 
-#generate_pots()
 
-#update_pot_with_plant(1, 4)
-#print(get_pots())
+init_pots_table()
+add_data_if_needed()
