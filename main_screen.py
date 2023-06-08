@@ -2,7 +2,7 @@ import customtkinter as ctk
 from time import strftime
 from user_editor import *
 from db_manager.plants import *
-from plant_tiles import PlantTiles
+from plant_sceen import PlantTiles
 from add_plant import AddPlant
 from plant_details import PlantDetails
 from pots_screen import PotsTiles
@@ -196,7 +196,7 @@ class App(ctk.CTk):
     def sync_button_event(self) -> None:
         """
         On sync button click sensor data is simulated and written in json.
-        Button changes color after 10s to yellow which suggests user to use it again again to get new fresh data.
+        Button changes color after 10s to yellow which suggests user to use it again to get new fresh data.
         """
         simulate_data()
         self.sync_button.configure(fg_color=["#2CC985", "#2FA572"], text_color=["gray98", "#DCE4EE"])

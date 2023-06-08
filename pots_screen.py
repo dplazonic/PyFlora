@@ -94,7 +94,7 @@ class PotsTiles(ctk.CTkScrollableFrame):
                     self.add_plant_button.bind("<Button-1>", lambda event, display_pot_id=pot[0]: self.add_plant_to_pot(event, display_pot_id))
 
                 # Define grid for pots - grid_row, grid_col = row,col (row x col)
-                grid_row, grid_col = 4,4
+                grid_row, grid_col = 5,5
                 row = (pot[0] - 1) // grid_row
                 col = (pot[0] - 1) % grid_col
                 

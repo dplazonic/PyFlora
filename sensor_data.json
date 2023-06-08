@@ -2,1013 +2,1013 @@
     "1": [
         {
             "pot_id": 1,
-            "temperature": 19.99,
-            "moisture": 84.55,
-            "brightness": 643.47,
-            "time": "2023-06-04 15:47"
+            "temperature": 14.57,
+            "moisture": 54.27,
+            "brightness": 633.48,
+            "time": "2023-06-08 09:48"
         },
         {
             "pot_id": 1,
-            "temperature": 30.38,
-            "moisture": 60.53,
-            "brightness": 449.81,
-            "time": "2023-06-04 15:27"
+            "temperature": 22.84,
+            "moisture": 5.81,
+            "brightness": 745.74,
+            "time": "2023-06-08 09:28"
         },
         {
             "pot_id": 1,
-            "temperature": 17.28,
-            "moisture": 86.58,
-            "brightness": 632.47,
-            "time": "2023-06-04 15:07"
+            "temperature": 30.39,
+            "moisture": 33.49,
+            "brightness": 146.65,
+            "time": "2023-06-08 09:08"
         },
         {
             "pot_id": 1,
-            "temperature": 19.36,
-            "moisture": 80.32,
-            "brightness": 34.58,
-            "time": "2023-06-04 14:47"
+            "temperature": 29.08,
+            "moisture": 40.03,
+            "brightness": 500.75,
+            "time": "2023-06-08 08:48"
         },
         {
             "pot_id": 1,
-            "temperature": 26.31,
-            "moisture": 21.79,
-            "brightness": 722.93,
-            "time": "2023-06-04 14:27"
+            "temperature": 23.69,
+            "moisture": 84.22,
+            "brightness": 207.11,
+            "time": "2023-06-08 08:28"
         },
         {
             "pot_id": 1,
-            "temperature": 34.72,
-            "moisture": 23.88,
-            "brightness": 977.72,
-            "time": "2023-06-04 14:07"
+            "temperature": 16.5,
+            "moisture": 20.76,
+            "brightness": 115.05,
+            "time": "2023-06-08 08:08"
         },
         {
             "pot_id": 1,
-            "temperature": 20.73,
-            "moisture": 15.76,
-            "brightness": 614.93,
-            "time": "2023-06-04 13:47"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 24.73,
-            "moisture": 39.18,
-            "brightness": 85.0,
-            "time": "2023-06-04 13:27"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 21.43,
-            "moisture": 39.97,
-            "brightness": 514.95,
-            "time": "2023-06-04 13:07"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 29.04,
-            "moisture": 11.2,
-            "brightness": 393.78,
-            "time": "2023-06-04 12:47"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 20.15,
-            "moisture": 53.1,
-            "brightness": 191.35,
-            "time": "2023-06-04 12:27"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 20.07,
-            "moisture": 77.93,
-            "brightness": 228.98,
-            "time": "2023-06-04 12:07"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 31.39,
-            "moisture": 66.83,
-            "brightness": 735.08,
-            "time": "2023-06-04 11:47"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 11.68,
-            "moisture": 89.34,
-            "brightness": 983.03,
-            "time": "2023-06-04 11:27"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 33.66,
-            "moisture": 92.94,
-            "brightness": 764.3,
-            "time": "2023-06-04 11:07"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 14.32,
-            "moisture": 22.23,
-            "brightness": 239.86,
-            "time": "2023-06-04 10:47"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 24.42,
-            "moisture": 52.71,
-            "brightness": 566.91,
-            "time": "2023-06-04 10:27"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 22.93,
-            "moisture": 65.67,
-            "brightness": 848.82,
-            "time": "2023-06-04 10:07"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 29.41,
-            "moisture": 25.86,
-            "brightness": 752.43,
-            "time": "2023-06-04 09:47"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 31.79,
-            "moisture": 58.73,
-            "brightness": 862.3,
-            "time": "2023-06-04 09:27"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 11.26,
-            "moisture": 13.08,
-            "brightness": 129.15,
-            "time": "2023-06-04 09:07"
-        },
-        {
-            "pot_id": 1,
-            "temperature": 20.85,
+            "temperature": 33.4,
             "moisture": 96.0,
-            "brightness": 182.35,
-            "time": "2023-06-04 08:47"
+            "brightness": 458.98,
+            "time": "2023-06-08 07:48"
         },
         {
             "pot_id": 1,
-            "temperature": 16.28,
-            "moisture": 96.1,
-            "brightness": 316.03,
-            "time": "2023-06-04 08:27"
+            "temperature": 30.61,
+            "moisture": 1.55,
+            "brightness": 210.75,
+            "time": "2023-06-08 07:28"
         },
         {
             "pot_id": 1,
-            "temperature": 11.37,
-            "moisture": 59.84,
-            "brightness": 396.07,
-            "time": "2023-06-04 08:07"
+            "temperature": 22.97,
+            "moisture": 57.42,
+            "brightness": 409.85,
+            "time": "2023-06-08 07:08"
         },
         {
             "pot_id": 1,
-            "temperature": 12.92,
-            "moisture": 77.83,
-            "brightness": 73.6,
-            "time": "2023-06-04 07:47"
+            "temperature": 16.01,
+            "moisture": 48.03,
+            "brightness": 369.93,
+            "time": "2023-06-08 06:48"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 12.96,
+            "moisture": 80.37,
+            "brightness": 174.79,
+            "time": "2023-06-08 06:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 11.74,
+            "moisture": 3.46,
+            "brightness": 410.31,
+            "time": "2023-06-08 06:08"
         },
         {
             "pot_id": 1,
             "temperature": 15.65,
-            "moisture": 36.28,
-            "brightness": 796.3,
-            "time": "2023-06-04 07:27"
+            "moisture": 65.83,
+            "brightness": 506.02,
+            "time": "2023-06-08 05:48"
         },
         {
             "pot_id": 1,
-            "temperature": 11.68,
-            "moisture": 71.49,
-            "brightness": 129.28,
-            "time": "2023-06-04 07:07"
+            "temperature": 30.95,
+            "moisture": 50.68,
+            "brightness": 50.62,
+            "time": "2023-06-08 05:28"
         },
         {
             "pot_id": 1,
-            "temperature": 29.02,
-            "moisture": 22.15,
-            "brightness": 530.33,
-            "time": "2023-06-04 06:47"
+            "temperature": 24.7,
+            "moisture": 36.93,
+            "brightness": 107.45,
+            "time": "2023-06-08 05:08"
         },
         {
             "pot_id": 1,
-            "temperature": 16.21,
-            "moisture": 42.27,
-            "brightness": 362.54,
-            "time": "2023-06-04 06:27"
+            "temperature": 22.45,
+            "moisture": 96.46,
+            "brightness": 884.51,
+            "time": "2023-06-08 04:48"
         },
         {
             "pot_id": 1,
-            "temperature": 16.18,
-            "moisture": 34.75,
-            "brightness": 454.17,
-            "time": "2023-06-04 06:07"
+            "temperature": 28.16,
+            "moisture": 90.77,
+            "brightness": 786.51,
+            "time": "2023-06-08 04:28"
         },
         {
             "pot_id": 1,
-            "temperature": 11.15,
-            "moisture": 19.93,
-            "brightness": 796.84,
-            "time": "2023-06-04 05:47"
+            "temperature": 24.08,
+            "moisture": 97.0,
+            "brightness": 48.88,
+            "time": "2023-06-08 04:08"
         },
         {
             "pot_id": 1,
-            "temperature": 12.4,
-            "moisture": 86.88,
-            "brightness": 431.24,
-            "time": "2023-06-04 05:27"
+            "temperature": 18.58,
+            "moisture": 53.66,
+            "brightness": 962.96,
+            "time": "2023-06-08 03:48"
         },
         {
             "pot_id": 1,
-            "temperature": 10.1,
-            "moisture": 95.16,
-            "brightness": 796.43,
-            "time": "2023-06-04 05:07"
+            "temperature": 31.17,
+            "moisture": 9.89,
+            "brightness": 126.04,
+            "time": "2023-06-08 03:28"
         },
         {
             "pot_id": 1,
-            "temperature": 20.0,
-            "moisture": 5.17,
-            "brightness": 92.02,
-            "time": "2023-06-04 04:47"
+            "temperature": 27.08,
+            "moisture": 84.09,
+            "brightness": 303.5,
+            "time": "2023-06-08 03:08"
         },
         {
             "pot_id": 1,
-            "temperature": 10.68,
-            "moisture": 22.37,
-            "brightness": 901.71,
-            "time": "2023-06-04 04:27"
+            "temperature": 12.74,
+            "moisture": 70.76,
+            "brightness": 589.83,
+            "time": "2023-06-08 02:48"
         },
         {
             "pot_id": 1,
-            "temperature": 11.97,
-            "moisture": 75.4,
-            "brightness": 239.02,
-            "time": "2023-06-04 04:07"
+            "temperature": 27.0,
+            "moisture": 45.38,
+            "brightness": 647.47,
+            "time": "2023-06-08 02:28"
         },
         {
             "pot_id": 1,
-            "temperature": 27.46,
-            "moisture": 99.77,
-            "brightness": 375.93,
-            "time": "2023-06-04 03:47"
+            "temperature": 24.74,
+            "moisture": 56.79,
+            "brightness": 164.46,
+            "time": "2023-06-08 02:08"
         },
         {
             "pot_id": 1,
-            "temperature": 28.69,
-            "moisture": 62.89,
-            "brightness": 297.38,
-            "time": "2023-06-04 03:27"
+            "temperature": 20.49,
+            "moisture": 63.42,
+            "brightness": 963.45,
+            "time": "2023-06-08 01:48"
         },
         {
             "pot_id": 1,
-            "temperature": 30.8,
-            "moisture": 2.88,
-            "brightness": 284.25,
-            "time": "2023-06-04 03:07"
+            "temperature": 22.66,
+            "moisture": 94.3,
+            "brightness": 499.75,
+            "time": "2023-06-08 01:28"
         },
         {
             "pot_id": 1,
-            "temperature": 31.31,
-            "moisture": 68.6,
-            "brightness": 793.49,
-            "time": "2023-06-04 02:47"
+            "temperature": 22.62,
+            "moisture": 52.51,
+            "brightness": 805.48,
+            "time": "2023-06-08 01:08"
         },
         {
             "pot_id": 1,
-            "temperature": 31.21,
-            "moisture": 19.05,
-            "brightness": 206.58,
-            "time": "2023-06-04 02:27"
+            "temperature": 18.49,
+            "moisture": 16.22,
+            "brightness": 347.14,
+            "time": "2023-06-08 00:48"
         },
         {
             "pot_id": 1,
-            "temperature": 34.09,
-            "moisture": 56.01,
-            "brightness": 103.34,
-            "time": "2023-06-04 02:07"
+            "temperature": 26.17,
+            "moisture": 80.5,
+            "brightness": 207.4,
+            "time": "2023-06-08 00:28"
         },
         {
             "pot_id": 1,
-            "temperature": 32.43,
-            "moisture": 71.16,
-            "brightness": 978.73,
-            "time": "2023-06-04 01:47"
+            "temperature": 14.36,
+            "moisture": 97.56,
+            "brightness": 291.43,
+            "time": "2023-06-08 00:08"
         },
         {
             "pot_id": 1,
-            "temperature": 30.57,
-            "moisture": 27.62,
-            "brightness": 9.16,
-            "time": "2023-06-04 01:27"
+            "temperature": 16.19,
+            "moisture": 36.88,
+            "brightness": 108.43,
+            "time": "2023-06-07 23:48"
         },
         {
             "pot_id": 1,
-            "temperature": 10.67,
-            "moisture": 98.12,
-            "brightness": 684.03,
-            "time": "2023-06-04 01:07"
+            "temperature": 11.84,
+            "moisture": 66.01,
+            "brightness": 646.84,
+            "time": "2023-06-07 23:28"
         },
         {
             "pot_id": 1,
-            "temperature": 30.67,
-            "moisture": 94.54,
-            "brightness": 908.21,
-            "time": "2023-06-04 00:47"
+            "temperature": 33.39,
+            "moisture": 36.83,
+            "brightness": 254.19,
+            "time": "2023-06-07 23:08"
         },
         {
             "pot_id": 1,
-            "temperature": 14.56,
-            "moisture": 68.24,
-            "brightness": 22.59,
-            "time": "2023-06-04 00:27"
+            "temperature": 23.08,
+            "moisture": 56.73,
+            "brightness": 978.91,
+            "time": "2023-06-07 22:48"
         },
         {
             "pot_id": 1,
-            "temperature": 20.1,
-            "moisture": 73.22,
-            "brightness": 505.97,
-            "time": "2023-06-04 00:07"
+            "temperature": 26.53,
+            "moisture": 91.29,
+            "brightness": 714.02,
+            "time": "2023-06-07 22:28"
         },
         {
             "pot_id": 1,
-            "temperature": 24.84,
-            "moisture": 74.35,
-            "brightness": 447.79,
-            "time": "2023-06-03 23:47"
+            "temperature": 14.61,
+            "moisture": 76.22,
+            "brightness": 696.11,
+            "time": "2023-06-07 22:08"
         },
         {
             "pot_id": 1,
-            "temperature": 32.37,
-            "moisture": 58.21,
-            "brightness": 808.48,
-            "time": "2023-06-03 23:27"
+            "temperature": 21.26,
+            "moisture": 2.45,
+            "brightness": 181.45,
+            "time": "2023-06-07 21:48"
         },
         {
             "pot_id": 1,
-            "temperature": 22.33,
-            "moisture": 52.01,
-            "brightness": 759.17,
-            "time": "2023-06-03 23:07"
+            "temperature": 14.61,
+            "moisture": 14.4,
+            "brightness": 607.27,
+            "time": "2023-06-07 21:28"
         },
         {
             "pot_id": 1,
-            "temperature": 34.08,
-            "moisture": 92.31,
-            "brightness": 564.71,
-            "time": "2023-06-03 22:47"
+            "temperature": 19.05,
+            "moisture": 99.31,
+            "brightness": 325.15,
+            "time": "2023-06-07 21:08"
         },
         {
             "pot_id": 1,
-            "temperature": 16.62,
-            "moisture": 98.0,
-            "brightness": 993.65,
-            "time": "2023-06-03 22:27"
+            "temperature": 21.0,
+            "moisture": 27.13,
+            "brightness": 797.77,
+            "time": "2023-06-07 20:48"
         },
         {
             "pot_id": 1,
-            "temperature": 21.13,
-            "moisture": 86.15,
-            "brightness": 400.04,
-            "time": "2023-06-03 22:07"
+            "temperature": 13.17,
+            "moisture": 3.8,
+            "brightness": 861.29,
+            "time": "2023-06-07 20:28"
         },
         {
             "pot_id": 1,
-            "temperature": 23.66,
-            "moisture": 79.47,
-            "brightness": 350.24,
-            "time": "2023-06-03 21:47"
+            "temperature": 25.5,
+            "moisture": 28.93,
+            "brightness": 187.15,
+            "time": "2023-06-07 20:08"
         },
         {
             "pot_id": 1,
-            "temperature": 33.27,
-            "moisture": 84.75,
-            "brightness": 488.41,
-            "time": "2023-06-03 21:27"
+            "temperature": 19.6,
+            "moisture": 37.65,
+            "brightness": 465.37,
+            "time": "2023-06-07 19:48"
         },
         {
             "pot_id": 1,
-            "temperature": 30.55,
-            "moisture": 57.89,
-            "brightness": 123.07,
-            "time": "2023-06-03 21:07"
+            "temperature": 18.12,
+            "moisture": 34.91,
+            "brightness": 679.95,
+            "time": "2023-06-07 19:28"
         },
         {
             "pot_id": 1,
-            "temperature": 32.08,
-            "moisture": 17.72,
-            "brightness": 891.24,
-            "time": "2023-06-03 20:47"
+            "temperature": 31.53,
+            "moisture": 33.84,
+            "brightness": 1.67,
+            "time": "2023-06-07 19:08"
         },
         {
             "pot_id": 1,
-            "temperature": 13.8,
-            "moisture": 36.15,
-            "brightness": 16.17,
-            "time": "2023-06-03 20:27"
+            "temperature": 23.1,
+            "moisture": 9.62,
+            "brightness": 55.27,
+            "time": "2023-06-07 18:48"
         },
         {
             "pot_id": 1,
-            "temperature": 30.7,
-            "moisture": 60.82,
-            "brightness": 173.78,
-            "time": "2023-06-03 20:07"
+            "temperature": 29.58,
+            "moisture": 20.84,
+            "brightness": 77.84,
+            "time": "2023-06-07 18:28"
         },
         {
             "pot_id": 1,
-            "temperature": 22.15,
-            "moisture": 22.22,
-            "brightness": 49.83,
-            "time": "2023-06-03 19:47"
+            "temperature": 21.56,
+            "moisture": 51.15,
+            "brightness": 612.03,
+            "time": "2023-06-07 18:08"
         },
         {
             "pot_id": 1,
-            "temperature": 15.75,
-            "moisture": 37.31,
-            "brightness": 975.83,
-            "time": "2023-06-03 19:27"
+            "temperature": 16.25,
+            "moisture": 74.85,
+            "brightness": 89.3,
+            "time": "2023-06-07 17:48"
         },
         {
             "pot_id": 1,
-            "temperature": 23.19,
-            "moisture": 79.14,
-            "brightness": 540.42,
-            "time": "2023-06-03 19:07"
+            "temperature": 16.14,
+            "moisture": 30.6,
+            "brightness": 474.03,
+            "time": "2023-06-07 17:28"
         },
         {
             "pot_id": 1,
-            "temperature": 18.5,
-            "moisture": 59.22,
-            "brightness": 400.06,
-            "time": "2023-06-03 18:47"
+            "temperature": 19.96,
+            "moisture": 24.85,
+            "brightness": 469.77,
+            "time": "2023-06-07 17:08"
         },
         {
             "pot_id": 1,
-            "temperature": 19.06,
-            "moisture": 17.13,
-            "brightness": 315.7,
-            "time": "2023-06-03 18:27"
+            "temperature": 15.35,
+            "moisture": 45.14,
+            "brightness": 101.5,
+            "time": "2023-06-07 16:48"
         },
         {
             "pot_id": 1,
-            "temperature": 34.29,
-            "moisture": 67.5,
-            "brightness": 168.71,
-            "time": "2023-06-03 18:07"
+            "temperature": 31.9,
+            "moisture": 24.35,
+            "brightness": 460.99,
+            "time": "2023-06-07 16:28"
         },
         {
             "pot_id": 1,
-            "temperature": 22.68,
-            "moisture": 20.0,
-            "brightness": 20.62,
-            "time": "2023-06-03 17:47"
+            "temperature": 17.33,
+            "moisture": 82.08,
+            "brightness": 771.75,
+            "time": "2023-06-07 16:08"
         },
         {
             "pot_id": 1,
-            "temperature": 22.74,
-            "moisture": 67.72,
-            "brightness": 926.46,
-            "time": "2023-06-03 17:27"
+            "temperature": 20.31,
+            "moisture": 57.64,
+            "brightness": 71.39,
+            "time": "2023-06-07 15:48"
         },
         {
             "pot_id": 1,
-            "temperature": 28.38,
-            "moisture": 63.51,
-            "brightness": 238.48,
-            "time": "2023-06-03 17:07"
+            "temperature": 12.74,
+            "moisture": 38.48,
+            "brightness": 998.1,
+            "time": "2023-06-07 15:28"
         },
         {
             "pot_id": 1,
-            "temperature": 21.49,
-            "moisture": 53.45,
-            "brightness": 37.03,
-            "time": "2023-06-03 16:47"
+            "temperature": 21.97,
+            "moisture": 32.65,
+            "brightness": 492.39,
+            "time": "2023-06-07 15:08"
         },
         {
             "pot_id": 1,
-            "temperature": 16.31,
-            "moisture": 57.51,
-            "brightness": 340.5,
-            "time": "2023-06-03 16:27"
+            "temperature": 26.07,
+            "moisture": 23.11,
+            "brightness": 948.13,
+            "time": "2023-06-07 14:48"
         },
         {
             "pot_id": 1,
-            "temperature": 25.49,
-            "moisture": 9.35,
-            "brightness": 687.35,
-            "time": "2023-06-03 16:07"
+            "temperature": 31.86,
+            "moisture": 60.4,
+            "brightness": 274.7,
+            "time": "2023-06-07 14:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 26.62,
+            "moisture": 29.82,
+            "brightness": 578.69,
+            "time": "2023-06-07 14:08"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 13.2,
+            "moisture": 25.27,
+            "brightness": 650.9,
+            "time": "2023-06-07 13:48"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 15.81,
+            "moisture": 28.31,
+            "brightness": 477.5,
+            "time": "2023-06-07 13:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 32.95,
+            "moisture": 22.69,
+            "brightness": 411.45,
+            "time": "2023-06-07 13:08"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 16.99,
+            "moisture": 77.46,
+            "brightness": 469.73,
+            "time": "2023-06-07 12:48"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 25.43,
+            "moisture": 18.56,
+            "brightness": 54.03,
+            "time": "2023-06-07 12:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 26.42,
+            "moisture": 61.72,
+            "brightness": 868.45,
+            "time": "2023-06-07 12:08"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 25.37,
+            "moisture": 5.32,
+            "brightness": 505.76,
+            "time": "2023-06-07 11:48"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 14.29,
+            "moisture": 1.33,
+            "brightness": 789.71,
+            "time": "2023-06-07 11:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 25.07,
+            "moisture": 58.99,
+            "brightness": 395.99,
+            "time": "2023-06-07 11:08"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 22.56,
+            "moisture": 84.26,
+            "brightness": 467.41,
+            "time": "2023-06-07 10:48"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 26.32,
+            "moisture": 19.58,
+            "brightness": 271.96,
+            "time": "2023-06-07 10:28"
+        },
+        {
+            "pot_id": 1,
+            "temperature": 22.11,
+            "moisture": 82.23,
+            "brightness": 837.77,
+            "time": "2023-06-07 10:08"
         }
     ],
     "2": [
         {
             "pot_id": 2,
-            "temperature": 32.74,
-            "moisture": 8.47,
-            "brightness": 187.78,
-            "time": "2023-06-04 15:47"
+            "temperature": 19.83,
+            "moisture": 58.31,
+            "brightness": 938.91,
+            "time": "2023-06-08 09:48"
         },
         {
             "pot_id": 2,
-            "temperature": 11.34,
-            "moisture": 14.6,
-            "brightness": 814.68,
-            "time": "2023-06-04 15:27"
+            "temperature": 21.39,
+            "moisture": 15.52,
+            "brightness": 396.66,
+            "time": "2023-06-08 09:28"
         },
         {
             "pot_id": 2,
-            "temperature": 19.23,
-            "moisture": 63.99,
-            "brightness": 567.23,
-            "time": "2023-06-04 15:07"
+            "temperature": 27.35,
+            "moisture": 62.78,
+            "brightness": 646.93,
+            "time": "2023-06-08 09:08"
         },
         {
             "pot_id": 2,
-            "temperature": 19.78,
-            "moisture": 18.31,
-            "brightness": 843.06,
-            "time": "2023-06-04 14:47"
+            "temperature": 32.32,
+            "moisture": 48.76,
+            "brightness": 207.81,
+            "time": "2023-06-08 08:48"
         },
         {
             "pot_id": 2,
-            "temperature": 28.98,
-            "moisture": 64.59,
-            "brightness": 426.93,
-            "time": "2023-06-04 14:27"
+            "temperature": 19.87,
+            "moisture": 57.84,
+            "brightness": 629.16,
+            "time": "2023-06-08 08:28"
         },
         {
             "pot_id": 2,
-            "temperature": 14.79,
-            "moisture": 39.23,
-            "brightness": 428.42,
-            "time": "2023-06-04 14:07"
+            "temperature": 33.68,
+            "moisture": 10.19,
+            "brightness": 652.32,
+            "time": "2023-06-08 08:08"
         },
         {
             "pot_id": 2,
-            "temperature": 10.16,
-            "moisture": 47.21,
-            "brightness": 954.66,
-            "time": "2023-06-04 13:47"
+            "temperature": 35.0,
+            "moisture": 61.17,
+            "brightness": 976.56,
+            "time": "2023-06-08 07:48"
         },
         {
             "pot_id": 2,
-            "temperature": 30.45,
-            "moisture": 12.76,
-            "brightness": 437.27,
-            "time": "2023-06-04 13:27"
+            "temperature": 27.52,
+            "moisture": 75.7,
+            "brightness": 858.59,
+            "time": "2023-06-08 07:28"
         },
         {
             "pot_id": 2,
-            "temperature": 31.47,
-            "moisture": 83.52,
-            "brightness": 814.55,
-            "time": "2023-06-04 13:07"
+            "temperature": 31.97,
+            "moisture": 58.36,
+            "brightness": 558.13,
+            "time": "2023-06-08 07:08"
         },
         {
             "pot_id": 2,
-            "temperature": 15.18,
-            "moisture": 61.29,
-            "brightness": 418.05,
-            "time": "2023-06-04 12:47"
+            "temperature": 29.72,
+            "moisture": 45.93,
+            "brightness": 342.99,
+            "time": "2023-06-08 06:48"
         },
         {
             "pot_id": 2,
-            "temperature": 18.07,
-            "moisture": 18.25,
-            "brightness": 252.07,
-            "time": "2023-06-04 12:27"
+            "temperature": 31.68,
+            "moisture": 63.35,
+            "brightness": 158.53,
+            "time": "2023-06-08 06:28"
         },
         {
             "pot_id": 2,
-            "temperature": 17.54,
-            "moisture": 52.13,
-            "brightness": 438.69,
-            "time": "2023-06-04 12:07"
+            "temperature": 11.84,
+            "moisture": 38.63,
+            "brightness": 304.97,
+            "time": "2023-06-08 06:08"
         },
         {
             "pot_id": 2,
-            "temperature": 24.91,
-            "moisture": 73.53,
-            "brightness": 430.65,
-            "time": "2023-06-04 11:47"
+            "temperature": 25.23,
+            "moisture": 22.33,
+            "brightness": 765.25,
+            "time": "2023-06-08 05:48"
         },
         {
             "pot_id": 2,
-            "temperature": 20.76,
-            "moisture": 96.73,
-            "brightness": 603.27,
-            "time": "2023-06-04 11:27"
+            "temperature": 15.05,
+            "moisture": 85.6,
+            "brightness": 692.07,
+            "time": "2023-06-08 05:28"
         },
         {
             "pot_id": 2,
-            "temperature": 26.09,
-            "moisture": 30.39,
-            "brightness": 454.79,
-            "time": "2023-06-04 11:07"
+            "temperature": 14.6,
+            "moisture": 63.16,
+            "brightness": 748.96,
+            "time": "2023-06-08 05:08"
         },
         {
             "pot_id": 2,
-            "temperature": 28.24,
-            "moisture": 53.81,
-            "brightness": 457.09,
-            "time": "2023-06-04 10:47"
+            "temperature": 29.33,
+            "moisture": 43.12,
+            "brightness": 948.62,
+            "time": "2023-06-08 04:48"
         },
         {
             "pot_id": 2,
-            "temperature": 25.01,
-            "moisture": 11.08,
-            "brightness": 331.11,
-            "time": "2023-06-04 10:27"
+            "temperature": 24.38,
+            "moisture": 72.51,
+            "brightness": 431.83,
+            "time": "2023-06-08 04:28"
         },
         {
             "pot_id": 2,
-            "temperature": 10.38,
-            "moisture": 70.27,
-            "brightness": 296.7,
-            "time": "2023-06-04 10:07"
+            "temperature": 29.68,
+            "moisture": 41.89,
+            "brightness": 340.47,
+            "time": "2023-06-08 04:08"
         },
         {
             "pot_id": 2,
-            "temperature": 11.98,
-            "moisture": 78.6,
-            "brightness": 185.98,
-            "time": "2023-06-04 09:47"
+            "temperature": 15.82,
+            "moisture": 16.23,
+            "brightness": 876.19,
+            "time": "2023-06-08 03:48"
         },
         {
             "pot_id": 2,
-            "temperature": 17.8,
-            "moisture": 8.8,
-            "brightness": 292.44,
-            "time": "2023-06-04 09:27"
+            "temperature": 16.69,
+            "moisture": 50.93,
+            "brightness": 406.61,
+            "time": "2023-06-08 03:28"
         },
         {
             "pot_id": 2,
-            "temperature": 12.19,
-            "moisture": 93.58,
-            "brightness": 737.49,
-            "time": "2023-06-04 09:07"
+            "temperature": 10.81,
+            "moisture": 99.27,
+            "brightness": 569.92,
+            "time": "2023-06-08 03:08"
         },
         {
             "pot_id": 2,
-            "temperature": 31.65,
-            "moisture": 57.95,
-            "brightness": 47.04,
-            "time": "2023-06-04 08:47"
+            "temperature": 11.57,
+            "moisture": 43.08,
+            "brightness": 861.65,
+            "time": "2023-06-08 02:48"
         },
         {
             "pot_id": 2,
-            "temperature": 29.16,
-            "moisture": 34.5,
-            "brightness": 2.49,
-            "time": "2023-06-04 08:27"
+            "temperature": 35.0,
+            "moisture": 62.71,
+            "brightness": 198.43,
+            "time": "2023-06-08 02:28"
         },
         {
             "pot_id": 2,
-            "temperature": 16.4,
-            "moisture": 73.16,
-            "brightness": 900.81,
-            "time": "2023-06-04 08:07"
+            "temperature": 20.51,
+            "moisture": 75.89,
+            "brightness": 513.03,
+            "time": "2023-06-08 02:08"
         },
         {
             "pot_id": 2,
-            "temperature": 24.99,
-            "moisture": 74.49,
-            "brightness": 212.95,
-            "time": "2023-06-04 07:47"
+            "temperature": 32.33,
+            "moisture": 87.41,
+            "brightness": 545.29,
+            "time": "2023-06-08 01:48"
         },
         {
             "pot_id": 2,
-            "temperature": 22.15,
-            "moisture": 62.46,
-            "brightness": 676.67,
-            "time": "2023-06-04 07:27"
+            "temperature": 12.85,
+            "moisture": 15.56,
+            "brightness": 82.17,
+            "time": "2023-06-08 01:28"
         },
         {
             "pot_id": 2,
-            "temperature": 29.11,
-            "moisture": 74.21,
-            "brightness": 870.35,
-            "time": "2023-06-04 07:07"
+            "temperature": 26.2,
+            "moisture": 12.4,
+            "brightness": 173.48,
+            "time": "2023-06-08 01:08"
         },
         {
             "pot_id": 2,
-            "temperature": 13.51,
-            "moisture": 23.98,
-            "brightness": 703.53,
-            "time": "2023-06-04 06:47"
+            "temperature": 10.02,
+            "moisture": 23.7,
+            "brightness": 416.72,
+            "time": "2023-06-08 00:48"
         },
         {
             "pot_id": 2,
-            "temperature": 19.24,
-            "moisture": 4.16,
-            "brightness": 200.99,
-            "time": "2023-06-04 06:27"
+            "temperature": 25.55,
+            "moisture": 55.7,
+            "brightness": 246.42,
+            "time": "2023-06-08 00:28"
         },
         {
             "pot_id": 2,
-            "temperature": 27.48,
-            "moisture": 39.6,
-            "brightness": 486.89,
-            "time": "2023-06-04 06:07"
+            "temperature": 10.84,
+            "moisture": 45.28,
+            "brightness": 176.9,
+            "time": "2023-06-08 00:08"
         },
         {
             "pot_id": 2,
-            "temperature": 29.16,
-            "moisture": 70.87,
-            "brightness": 866.17,
-            "time": "2023-06-04 05:47"
+            "temperature": 27.61,
+            "moisture": 69.55,
+            "brightness": 235.16,
+            "time": "2023-06-07 23:48"
         },
         {
             "pot_id": 2,
-            "temperature": 22.89,
-            "moisture": 80.39,
-            "brightness": 883.97,
-            "time": "2023-06-04 05:27"
+            "temperature": 31.89,
+            "moisture": 10.46,
+            "brightness": 371.06,
+            "time": "2023-06-07 23:28"
         },
         {
             "pot_id": 2,
-            "temperature": 30.36,
-            "moisture": 88.54,
-            "brightness": 397.15,
-            "time": "2023-06-04 05:07"
+            "temperature": 32.63,
+            "moisture": 12.96,
+            "brightness": 367.02,
+            "time": "2023-06-07 23:08"
         },
         {
             "pot_id": 2,
-            "temperature": 16.81,
-            "moisture": 1.43,
-            "brightness": 958.43,
-            "time": "2023-06-04 04:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 14.19,
-            "moisture": 50.05,
-            "brightness": 330.68,
-            "time": "2023-06-04 04:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 14.86,
-            "moisture": 30.87,
-            "brightness": 293.99,
-            "time": "2023-06-04 04:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 22.13,
-            "moisture": 42.61,
-            "brightness": 225.75,
-            "time": "2023-06-04 03:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 22.7,
-            "moisture": 20.09,
-            "brightness": 847.03,
-            "time": "2023-06-04 03:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 24.03,
-            "moisture": 22.81,
-            "brightness": 938.94,
-            "time": "2023-06-04 03:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 13.09,
-            "moisture": 27.61,
-            "brightness": 651.4,
-            "time": "2023-06-04 02:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 16.16,
-            "moisture": 83.06,
-            "brightness": 162.19,
-            "time": "2023-06-04 02:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 27.9,
-            "moisture": 86.22,
-            "brightness": 932.21,
-            "time": "2023-06-04 02:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 26.97,
-            "moisture": 82.71,
-            "brightness": 754.47,
-            "time": "2023-06-04 01:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 20.72,
-            "moisture": 76.0,
-            "brightness": 599.12,
-            "time": "2023-06-04 01:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 17.71,
-            "moisture": 35.02,
-            "brightness": 739.78,
-            "time": "2023-06-04 01:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 31.48,
-            "moisture": 36.06,
-            "brightness": 580.36,
-            "time": "2023-06-04 00:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 13.91,
-            "moisture": 62.36,
-            "brightness": 46.36,
-            "time": "2023-06-04 00:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 30.81,
-            "moisture": 38.7,
-            "brightness": 673.1,
-            "time": "2023-06-04 00:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 19.88,
-            "moisture": 6.68,
-            "brightness": 832.86,
-            "time": "2023-06-03 23:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 31.43,
-            "moisture": 37.81,
-            "brightness": 859.67,
-            "time": "2023-06-03 23:27"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 17.45,
-            "moisture": 14.1,
-            "brightness": 684.65,
-            "time": "2023-06-03 23:07"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 24.98,
-            "moisture": 9.44,
-            "brightness": 258.95,
-            "time": "2023-06-03 22:47"
-        },
-        {
-            "pot_id": 2,
-            "temperature": 32.8,
-            "moisture": 27.24,
-            "brightness": 100.6,
-            "time": "2023-06-03 22:27"
+            "temperature": 33.57,
+            "moisture": 4.6,
+            "brightness": 94.75,
+            "time": "2023-06-07 22:48"
         },
         {
             "pot_id": 2,
             "temperature": 14.78,
-            "moisture": 65.15,
-            "brightness": 494.33,
-            "time": "2023-06-03 22:07"
+            "moisture": 82.03,
+            "brightness": 365.57,
+            "time": "2023-06-07 22:28"
         },
         {
             "pot_id": 2,
-            "temperature": 14.84,
-            "moisture": 3.36,
-            "brightness": 31.41,
-            "time": "2023-06-03 21:47"
+            "temperature": 23.78,
+            "moisture": 57.9,
+            "brightness": 698.37,
+            "time": "2023-06-07 22:08"
         },
         {
             "pot_id": 2,
-            "temperature": 19.52,
-            "moisture": 98.4,
-            "brightness": 459.08,
-            "time": "2023-06-03 21:27"
+            "temperature": 20.66,
+            "moisture": 35.67,
+            "brightness": 525.71,
+            "time": "2023-06-07 21:48"
         },
         {
             "pot_id": 2,
-            "temperature": 26.74,
-            "moisture": 88.83,
-            "brightness": 807.91,
-            "time": "2023-06-03 21:07"
+            "temperature": 26.58,
+            "moisture": 97.74,
+            "brightness": 222.67,
+            "time": "2023-06-07 21:28"
         },
         {
             "pot_id": 2,
-            "temperature": 18.17,
-            "moisture": 13.78,
-            "brightness": 991.9,
-            "time": "2023-06-03 20:47"
+            "temperature": 15.75,
+            "moisture": 4.3,
+            "brightness": 242.54,
+            "time": "2023-06-07 21:08"
         },
         {
             "pot_id": 2,
-            "temperature": 22.71,
-            "moisture": 55.84,
-            "brightness": 134.1,
-            "time": "2023-06-03 20:27"
+            "temperature": 32.95,
+            "moisture": 9.26,
+            "brightness": 833.52,
+            "time": "2023-06-07 20:48"
         },
         {
             "pot_id": 2,
-            "temperature": 13.17,
-            "moisture": 52.95,
-            "brightness": 336.43,
-            "time": "2023-06-03 20:07"
+            "temperature": 26.98,
+            "moisture": 97.71,
+            "brightness": 736.0,
+            "time": "2023-06-07 20:28"
         },
         {
             "pot_id": 2,
-            "temperature": 25.44,
-            "moisture": 92.32,
-            "brightness": 686.28,
-            "time": "2023-06-03 19:47"
+            "temperature": 33.17,
+            "moisture": 69.34,
+            "brightness": 292.85,
+            "time": "2023-06-07 20:08"
         },
         {
             "pot_id": 2,
-            "temperature": 12.73,
-            "moisture": 28.6,
-            "brightness": 729.91,
-            "time": "2023-06-03 19:27"
+            "temperature": 33.73,
+            "moisture": 23.73,
+            "brightness": 839.49,
+            "time": "2023-06-07 19:48"
         },
         {
             "pot_id": 2,
-            "temperature": 31.9,
-            "moisture": 21.14,
-            "brightness": 359.46,
-            "time": "2023-06-03 19:07"
+            "temperature": 31.05,
+            "moisture": 31.72,
+            "brightness": 961.79,
+            "time": "2023-06-07 19:28"
         },
         {
             "pot_id": 2,
-            "temperature": 21.5,
-            "moisture": 73.75,
-            "brightness": 474.37,
-            "time": "2023-06-03 18:47"
+            "temperature": 20.37,
+            "moisture": 23.45,
+            "brightness": 898.53,
+            "time": "2023-06-07 19:08"
         },
         {
             "pot_id": 2,
-            "temperature": 32.44,
-            "moisture": 98.18,
-            "brightness": 632.74,
-            "time": "2023-06-03 18:27"
+            "temperature": 14.5,
+            "moisture": 98.65,
+            "brightness": 506.41,
+            "time": "2023-06-07 18:48"
         },
         {
             "pot_id": 2,
-            "temperature": 23.04,
-            "moisture": 11.92,
-            "brightness": 260.93,
-            "time": "2023-06-03 18:07"
+            "temperature": 27.04,
+            "moisture": 41.19,
+            "brightness": 524.54,
+            "time": "2023-06-07 18:28"
         },
         {
             "pot_id": 2,
-            "temperature": 18.68,
-            "moisture": 46.26,
-            "brightness": 263.84,
-            "time": "2023-06-03 17:47"
+            "temperature": 12.08,
+            "moisture": 3.2,
+            "brightness": 268.65,
+            "time": "2023-06-07 18:08"
         },
         {
             "pot_id": 2,
-            "temperature": 21.57,
-            "moisture": 64.22,
-            "brightness": 911.83,
-            "time": "2023-06-03 17:27"
+            "temperature": 17.3,
+            "moisture": 20.27,
+            "brightness": 300.18,
+            "time": "2023-06-07 17:48"
         },
         {
             "pot_id": 2,
-            "temperature": 18.08,
-            "moisture": 30.33,
-            "brightness": 742.55,
-            "time": "2023-06-03 17:07"
+            "temperature": 27.64,
+            "moisture": 4.68,
+            "brightness": 392.9,
+            "time": "2023-06-07 17:28"
         },
         {
             "pot_id": 2,
-            "temperature": 14.11,
-            "moisture": 53.47,
-            "brightness": 253.79,
-            "time": "2023-06-03 16:47"
+            "temperature": 20.29,
+            "moisture": 35.08,
+            "brightness": 970.6,
+            "time": "2023-06-07 17:08"
         },
         {
             "pot_id": 2,
-            "temperature": 13.86,
-            "moisture": 80.68,
-            "brightness": 614.54,
-            "time": "2023-06-03 16:27"
+            "temperature": 14.47,
+            "moisture": 34.23,
+            "brightness": 521.17,
+            "time": "2023-06-07 16:48"
         },
         {
             "pot_id": 2,
-            "temperature": 25.13,
-            "moisture": 39.96,
-            "brightness": 212.59,
-            "time": "2023-06-03 16:07"
+            "temperature": 24.38,
+            "moisture": 85.55,
+            "brightness": 179.99,
+            "time": "2023-06-07 16:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 10.93,
+            "moisture": 50.51,
+            "brightness": 532.15,
+            "time": "2023-06-07 16:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 12.09,
+            "moisture": 54.82,
+            "brightness": 541.99,
+            "time": "2023-06-07 15:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 32.18,
+            "moisture": 31.34,
+            "brightness": 562.12,
+            "time": "2023-06-07 15:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 11.63,
+            "moisture": 29.91,
+            "brightness": 79.76,
+            "time": "2023-06-07 15:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 15.07,
+            "moisture": 10.15,
+            "brightness": 819.17,
+            "time": "2023-06-07 14:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 13.02,
+            "moisture": 14.73,
+            "brightness": 800.16,
+            "time": "2023-06-07 14:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 16.68,
+            "moisture": 82.95,
+            "brightness": 859.63,
+            "time": "2023-06-07 14:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 16.36,
+            "moisture": 17.59,
+            "brightness": 28.93,
+            "time": "2023-06-07 13:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 20.99,
+            "moisture": 41.68,
+            "brightness": 903.58,
+            "time": "2023-06-07 13:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 30.19,
+            "moisture": 91.26,
+            "brightness": 100.7,
+            "time": "2023-06-07 13:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 25.88,
+            "moisture": 27.17,
+            "brightness": 43.63,
+            "time": "2023-06-07 12:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 12.4,
+            "moisture": 24.27,
+            "brightness": 493.86,
+            "time": "2023-06-07 12:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 33.33,
+            "moisture": 30.31,
+            "brightness": 895.32,
+            "time": "2023-06-07 12:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 16.78,
+            "moisture": 20.91,
+            "brightness": 524.22,
+            "time": "2023-06-07 11:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 25.08,
+            "moisture": 79.13,
+            "brightness": 250.57,
+            "time": "2023-06-07 11:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 30.75,
+            "moisture": 91.96,
+            "brightness": 650.57,
+            "time": "2023-06-07 11:08"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 30.25,
+            "moisture": 0.19,
+            "brightness": 556.83,
+            "time": "2023-06-07 10:48"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 20.42,
+            "moisture": 42.52,
+            "brightness": 179.39,
+            "time": "2023-06-07 10:28"
+        },
+        {
+            "pot_id": 2,
+            "temperature": 23.39,
+            "moisture": 99.82,
+            "brightness": 13.42,
+            "time": "2023-06-07 10:08"
         }
     ]
 }

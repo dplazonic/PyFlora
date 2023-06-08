@@ -29,7 +29,8 @@ class LoginScreen(ctk.CTkFrame):
 
         if check_user(username, password) and check_password(username, password):
             messagebox.showinfo("Prijava uspješna", "Dobrodošli")
-            self.grid_forget() 
+            self.grid_forget()
+            self.master.update_pot_tiles() 
         else:
             messagebox.showerror("Prijava neuspješna!", "Netočno korisničko ime ili lozinka. Pokušajte ponovno.")
 
@@ -48,6 +49,7 @@ class LoginScreen(ctk.CTkFrame):
         ctk.CTkEntry(self.mid_frame, textvariable=self.password, show="*").grid(row=1, column=1, padx=10, pady=10)
 
         ctk.CTkButton(self.mid_frame, text="Prijavi se", command=self.check_credentials).grid(row=2, columnspan=2, padx=10, pady=10, sticky="we")
+        
 
 
 
