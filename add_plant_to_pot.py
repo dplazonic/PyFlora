@@ -1,7 +1,7 @@
 import tkinter as tk
 import customtkinter as ctk
 from PIL import Image
-from db_manager.plants import *
+from db_manager.plants_db import *
 from db_manager.pots_db import *
 
 

@@ -1,7 +1,7 @@
 import customtkinter as ctk
-from db_manager.plants import *
+from db_manager.plants_db import *
 from db_manager.pots_db import *
-
+from sensors import simulate_data
 
 class AddPot(ctk.CTkFrame):
     def __init__(self, master: ctk.CTk, *args, **kwargs) -> None:
@@ -16,7 +16,7 @@ class AddPot(ctk.CTkFrame):
         self.master = master
         
         self.mid_frame = ctk.CTkFrame(self)
-        self.mid_frame.grid(padx=200, pady=200)
+        self.mid_frame.grid(row=1, column=0, padx=10, pady=10, sticky="nswe")
 
         self.form_frame = ctk.CTkFrame(self.mid_frame)
         self.form_frame.grid(padx=50, pady=100)
@@ -55,3 +55,5 @@ class AddPot(ctk.CTkFrame):
 
         self.mid_frame.grid_forget()
         self.master.update_pot_tiles()
+
+    

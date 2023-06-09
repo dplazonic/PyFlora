@@ -91,7 +91,22 @@ def get_pot_by_display_id(display_id):
 
     return None
 
-            
+def change_pot_placement(placement, pot_id):
+    conn = create_connection()
+    if conn is not None:
+        cursor = conn.cursor()
+        try:
+            cursor.execute("""
+            UPDATE pots 
+            SET placement=? 
+            WHERE id=?
+            """, (placement, pot_id))
+            conn.commit()
+            print("pot moved")
+        except sqlite3.Error as e:
+            print(e)
+        finally:
+            conn.close
 
 def update_pot_with_plant(pot_id, plant_id):
     conn = create_connection()
@@ -163,12 +178,10 @@ def is_pots_table_empty() -> bool:
 
 def add_data_if_needed() -> None:
     """
-    Adds test data to the 'plants' table if it is empty.
+    Adds test data to the 'pots' table if it is empty.
     """
     if is_pots_table_empty():
         generate_pots()
-
-
 
 def generate_pots():
     add_pot("glina", "kuhinja", "srednja", None)

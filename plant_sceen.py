@@ -1,7 +1,7 @@
 import tkinter as tk 
 from tkinter import *
 from PIL import Image
-from db_manager.plants import *
+from db_manager.plants_db import *
 import customtkinter as ctk
 from plant_details import *
 
@@ -23,7 +23,7 @@ class PlantTiles(ctk.CTkScrollableFrame):
 
         self.master = master
         self.mid_frame = ctk.CTkFrame(self)
-        self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=20, pady=20)        
+        self.mid_frame.grid(row=1, column=0, columnspan=4, sticky="nswe", padx=10, pady=10)        
         
         plants=get_plants()
 
@@ -50,16 +50,20 @@ class PlantTiles(ctk.CTkScrollableFrame):
                 self.right_tile = ctk.CTkFrame(self.tile, fg_color="transparent")
                 self.right_tile.grid(row=0, column=1, padx=5)
 
-                self.desc_label_0 = ctk.CTkLabel(self.right_tile, text=plant[2], font=ctk.CTkFont(size=20, weight="bold"), wraplength=150)
-                self.desc_label_0.grid(row=0, column=0, pady=5)
-                self.desc_label_1 = ctk.CTkLabel(self.right_tile, text=f"Zalijevanje: {plant[4]}", font=ctk.CTkFont(size=12),  wraplength=150)
-                self.desc_label_1.grid(row=1, column=0, padx=5, pady=5, sticky="w")
-                self.desc_label_2 = ctk.CTkLabel(self.right_tile, text=f"Izloženost svjetlosti: {plant[5]}", font=ctk.CTkFont(size=12), wraplength=150)
-                self.desc_label_2.grid(row=2, column=0, padx=5, pady=5, sticky="w")
-                self.desc_label_3 = ctk.CTkLabel(self.right_tile, text=f"Temperetura: {plant[6]}", font=ctk.CTkFont(size=12), wraplength=150)
-                self.desc_label_3.grid(row=3, column=0, padx=5, pady=5, sticky="w")
-                self.desc_label_4 = ctk.CTkLabel(self.right_tile, text=f"Dodavanje supstrata: {'da' if plant[7] == 1 else 'ne'}", font=ctk.CTkFont(size=12), wraplength=150)
-                self.desc_label_4.grid(row=4, column=0, padx=5, sticky="w")
+                self.desc_label_title = ctk.CTkLabel(self.right_tile, text=plant[2], font=ctk.CTkFont(size=20, weight="bold"))
+                self.desc_label_title.grid(row=0, column=0, pady=2)
+                self.desc_label_watering = ctk.CTkLabel(self.right_tile, text=f"Zalijevanje: {plant[4]}", font=ctk.CTkFont(size=12))
+                self.desc_label_watering.grid(row=1, column=0, padx=5, pady=2, sticky="w")
+                self.desc_label_brightness = ctk.CTkLabel(self.right_tile, text=f"Izloženost svjetlosti: {plant[5]}", font=ctk.CTkFont(size=12))
+                self.desc_label_brightness.grid(row=2, column=0, padx=5, pady=2, sticky="w")
+                self.desc_label_temperatrure = ctk.CTkLabel(self.right_tile, text=f"Temperatura: {plant[6]}", font=ctk.CTkFont(size=12))
+                self.desc_label_temperatrure.grid(row=3, column=0, padx=5, pady=2, sticky="w")
+                self.desc_label_ph = ctk.CTkLabel(self.right_tile, text=f"odgovarajući pH tla: {plant[7]}", font=ctk.CTkFont(size=12))
+                self.desc_label_ph.grid(row=4, column=0, padx=5, pady=2, sticky="w")
+                self.desc_label_salinity = ctk.CTkLabel(self.right_tile, text=f"Salinitet tla: {plant[8]}", font=ctk.CTkFont(size=12))
+                self.desc_label_salinity.grid(row=5, column=0, padx=5, pady=2, sticky="w")
+                self.desc_label_supstrate = ctk.CTkLabel(self.right_tile, text=f"Dodavanje supstrata: {'da' if plant[9] == 1 else 'ne'}", font=ctk.CTkFont(size=12))
+                self.desc_label_supstrate.grid(row=6, column=0, padx=5, sticky="w")
 
                 self.del_button = ctk.CTkButton(self.tile, text="X", text_color="black", fg_color="#FF6961", hover_color="#D60B00", corner_radius=100, width=10, height=10)
                 self.del_button.grid(row=0, column=1, sticky="ne")

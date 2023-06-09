@@ -1,6 +1,7 @@
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import messagebox
+from sensors import simulate_data
 from db_manager.login_db import *
  
 
@@ -15,6 +16,7 @@ class LoginScreen(ctk.CTkFrame):
         self.master = master
         self.username = tk.StringVar()
         self.password = tk.StringVar()
+        simulate_data()
         self.create_login_screen()
 
     def check_credentials(self) -> None:
